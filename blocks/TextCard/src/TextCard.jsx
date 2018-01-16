@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import IceCard from '@icedesign/card';
@@ -79,9 +79,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   textCardSubtitle: { fontSize: '12px', marginBottom: '10px' },
   textCardTitle: { fontSize: '16px' },
-  textCardNumber: { fontSize: '24px', fontWeight: 'bold' }
+  textCardNumber: { fontSize: '24px', fontWeight: 'bold' },
 };

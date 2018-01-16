@@ -30,7 +30,7 @@ export default class SeriesLine extends Component {
       { month: 'Sep', Tokyo: 23.3, London: 85 },
       { month: 'Oct', Tokyo: 18.3, London: 90 },
       { month: 'Nov', Tokyo: 13.9, London: 80 },
-      { month: 'Dec', Tokyo: 9.6, London: 70 }
+      { month: 'Dec', Tokyo: 9.6, London: 70 },
     ];
 
     // DataSet https://github.com/alibaba/BizCharts/blob/master/doc/tutorial/dataset.md#dataset
@@ -40,14 +40,14 @@ export default class SeriesLine extends Component {
       type: 'fold',
       fields: ['Tokyo', 'London'],
       key: 'city',
-      value: 'temperature'
+      value: 'temperature',
     });
 
     // 定义度量
     const cols = {
       month: {
-        range: [0, 1]
-      }
+        range: [0, 1],
+      },
     };
 
     return (
@@ -86,6 +86,6 @@ export default class SeriesLine extends Component {
 const styles = {
   point: {
     stroke: '#fff',
-    lineWidth: 1
-  }
+    lineWidth: 1,
+  },
 };

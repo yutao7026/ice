@@ -7,7 +7,7 @@ const generatorData = (count) => {
   return Array.from({ length: count }).map((item, index) => {
     return {
       imgUrl:
-        'https://img.alicdn.com/tfs/TB1rnNcjr_I8KJjy1XaXXbsxpXa-603-474.png'
+        'https://img.alicdn.com/tfs/TB1rnNcjr_I8KJjy1XaXXbsxpXa-603-474.png',
     };
   });
 };
@@ -70,5 +70,5 @@ const styles = {
   intro: { textAlign: 'center', color: '#999' },
   items: { display: 'flex', flexWrap: 'wrap', margin: '30px 0' },
   item: { width: '16.66%', margin: '10px 0', textAlign: 'center' },
-  image: { width: '100px', height: '80px' }
+  image: { width: '100px', height: '80px' },
 };

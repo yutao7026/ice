@@ -6,7 +6,7 @@ import IceCard from '@icedesign/card';
 import {
   FormBinderWrapper as IceFormBinderWrapper,
   FormBinder as IceFormBinder,
-  FormError as IceFormError
+  FormError as IceFormError,
 } from '@icedesign/form-binder';
 
 const { Row, Col } = Grid;
@@ -108,7 +108,7 @@ export default class Filter extends Component {
           <div
             style={{
               textAlign: 'right',
-              marginRight: '28px'
+              marginRight: '28px',
             }}
           >
             <Button onClick={this.props.onReset} type="normal">
@@ -132,17 +132,17 @@ const styles = {
   filterCol: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '20px'
+    marginBottom: '20px',
   },
 
   filterTitle: {
     width: '68px',
     textAlign: 'right',
     marginRight: '12px',
-    fontSize: '14px'
+    fontSize: '14px',
   },
 
   filterTool: {
-    width: '200px'
-  }
+    width: '200px',
+  },
 };

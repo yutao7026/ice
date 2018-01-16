@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -57,19 +57,19 @@ export default class SuccessDialog extends Component {
 }
 
 const styles = {
-  dialog: { width: "640px" },
+  dialog: { width: '640px' },
   dialogContent: {
-    height: "200px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center"
+    height: '200px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   icon: {
-    width: "52px",
-    height: "52px",
-    marginTop: "46px",
-    marginBottom: "10px"
+    width: '52px',
+    height: '52px',
+    marginTop: '46px',
+    marginBottom: '10px',
   },
-  text: { fontSize: "16px" },
+  text: { fontSize: '16px' },
 };
 

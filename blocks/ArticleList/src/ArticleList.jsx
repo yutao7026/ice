@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -15,7 +15,7 @@ const generatorData = () => {
       tags: ['直播', '大促活动', '讲解'],
       like: 123,
       favor: 245,
-      comment: 546
+      comment: 546,
     };
   });
 };
@@ -25,7 +25,7 @@ export default class ArticleList extends Component {
 
   static propTypes = {
     style: PropTypes.object,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {};
@@ -110,12 +110,12 @@ const styles = {
   articleSort: {
     margin: '0',
     padding: '0',
-    display: 'flex'
+    display: 'flex',
   },
   articleItem: {
     marginBottom: '30px',
     paddingBottom: '30px',
-    borderBottom: '1px solid #f5f5f5'
+    borderBottom: '1px solid #f5f5f5',
   },
   title: { fontSize: '16px', color: '#333', textDecoration: 'none' },
   desc: { lineHeight: '24px', fontSize: '14px', color: '#999' },
@@ -126,11 +126,11 @@ const styles = {
     color: '#999',
     padding: '4px 15px',
     borderRadius: '20px',
-    marginRight: '20px'
+    marginRight: '20px',
   },
   articleItemMeta: {
     position: 'absolute',
     right: '0',
-    top: '0'
-  }
+    top: '0',
+  },
 };

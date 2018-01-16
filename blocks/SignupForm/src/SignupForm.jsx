@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -53,21 +53,23 @@ export default class SignupForm extends Component {
           <Form field={this.field} >
             <FormItem>
               <IceIcon type="person" size="xs" />
-              <Input maxLength={20} placeholder="会员名/邮箱/手机号"
+              <Input maxLength={20}
+                placeholder="会员名/邮箱/手机号"
                 {...init('name', {
                   rules: [
-                    {required: true, min: 5, message: '用户名至少为 5 个字符'}
+                    { required: true, min: 5, message: '用户名至少为 5 个字符' },
                   ],
                 })}
               />
             </FormItem>
             <FormItem>
               <IceIcon type="lock" size="xs" />
-              <Input htmlType="password" placeholder="密码"
+              <Input htmlType="password"
+                placeholder="密码"
                 {...init('password', {
                   rules: [
-                    {required: true, whitespace: true, min: 6, message: '密码至少为 6 个字符'},
-                    {validator: this.checkPassword.bind(this)},
+                    { required: true, whitespace: true, min: 6, message: '密码至少为 6 个字符' },
+                    { validator: this.checkPassword.bind(this) },
                   ],
                 })}
               />
@@ -90,4 +92,4 @@ export default class SignupForm extends Component {
   }
 }
 
-const styles = {"signupForm":{"display":"flex","justifyContent":"center"},"form":{"display":"flex","justifyContent":"center"},"tips":{"textAlign":"center","a {Color":"#999","textDecoration":"none","fontSize":"13px"}}
+const styles = { signupForm: { display: 'flex', justifyContent: 'center' }, form: { display: 'flex', justifyContent: 'center' }, tips: { textAlign: 'center', 'a {Color': '#999', textDecoration: 'none', fontSize: '13px' } };

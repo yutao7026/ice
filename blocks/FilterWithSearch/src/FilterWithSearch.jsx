@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import IceCard from '@icedesign/card';
@@ -31,7 +31,7 @@ export default class FilterWithSearch extends Component {
 
   componentWillUnmount() { }
 
-  selectFilter = type => {
+  selectFilter = (type) => {
     // type can be 'all', 'process', 'pending'
     // handler
   };
@@ -87,7 +87,7 @@ const styles = {
   filterWithSearchContainer: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   filterContainer: { display: 'flex', alignItems: 'center' },
   filterItem: {
@@ -96,6 +96,6 @@ const styles = {
     color: '#333',
     fontSize: '14px',
     cursor: 'pointer',
-    borderRight: '1px solid #D8D8D8'
-  }
+    borderRight: '1px solid #D8D8D8',
+  },
 };

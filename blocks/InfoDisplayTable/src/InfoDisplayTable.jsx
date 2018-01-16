@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -17,19 +17,19 @@ const dataSource = () => {
     },
     {
       label: '性别',
-      value: '男'
+      value: '男',
     },
     {
       label: '年龄',
-      value: '25'
+      value: '25',
     },
     {
       label: '籍贯',
-      value: '杭州'
+      value: '杭州',
     },
     {
       label: '职业',
-      value: '程序员'
+      value: '程序员',
     },
   ];
 };
@@ -86,4 +86,4 @@ export default class InfoDisplayTable extends Component {
   }
 }
 
-const styles = { "infoDisplayTable": {} }
+const styles = { infoDisplayTable: {} };

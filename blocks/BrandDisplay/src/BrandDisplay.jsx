@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -13,7 +13,7 @@ const dataSource = [
     headPic:
       'https://img.alicdn.com/tfs/TB1QMwlSXXXXXaUXXXXXXXXXXXX-122-122.png',
     pic: 'https://img.alicdn.com/tfs/TB1n6H_SXXXXXc3XpXXXXXXXXXX-616-348.png',
-    url: 'https://v.taobao.com/v/mission/case-detail?userId=38587850'
+    url: 'https://v.taobao.com/v/mission/case-detail?userId=38587850',
   },
   {
     title: '万家乐',
@@ -21,7 +21,7 @@ const dataSource = [
       '策划『生活改造家』主题全案，联合一线大咖制作图文、直播、短视频全域引流，助力品牌升级和高端人群种草，结合行业活动割草。',
     headPic: 'https://img.alicdn.com/tfs/TB1Z4CLSXXXXXcHXVXXXXXXXXXX-61-61.png',
     pic: 'https://img.alicdn.com/tfs/TB1bHO6SXXXXXaiXFXXXXXXXXXX-308-174.png',
-    url: 'https://v.taobao.com/v/mission/case-detail?userId=2738062192'
+    url: 'https://v.taobao.com/v/mission/case-detail?userId=2738062192',
   },
   {
     title: '职场游乐园',
@@ -29,7 +29,7 @@ const dataSource = [
     headPic:
       'https://img.alicdn.com/tfs/TB1kX62SXXXXXXJXVXXXXXXXXXX-122-122.png',
     pic: 'https://img.alicdn.com/tfs/TB17bzrSXXXXXbpaFXXXXXXXXXX-616-348.png',
-    url: 'https://v.taobao.com/v/mission/case-detail?userId=2894350953'
+    url: 'https://v.taobao.com/v/mission/case-detail?userId=2894350953',
   },
   {
     title: '品味百味人生',
@@ -38,8 +38,8 @@ const dataSource = [
     headPic:
       'https://img.alicdn.com/tfs/TB19C_9SXXXXXc1XpXXXXXXXXXX-122-122.png',
     pic: 'https://img.alicdn.com/tfs/TB1IkEjSXXXXXb1XXXXXXXXXXXX-616-348.png',
-    url: 'https://v.taobao.com/v/mission/case-detail?userId=2149813109'
-  }
+    url: 'https://v.taobao.com/v/mission/case-detail?userId=2149813109',
+  },
 ];
 
 export default class BrandDisplay extends Component {
@@ -47,7 +47,7 @@ export default class BrandDisplay extends Component {
 
   static propTypes = {
     style: PropTypes.object,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {};
@@ -93,12 +93,12 @@ const styles = {
     verticalAlign: 'top',
     marginBottom: '30px',
     marginLeft: '15px',
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
   caseContent: {
     width: '250px',
     display: 'inline-block',
-    verticalAlign: 'top'
+    verticalAlign: 'top',
   },
   caseSubject: { margin: '20px 10px 0', lineHeight: '60px', height: '60px' },
   subjectImage: { width: '60px', height: '60px', borderRadius: '50%' },
@@ -107,12 +107,12 @@ const styles = {
     color: '#333333',
     height: '60px',
     verticalAlign: 'top',
-    marginLeft: '12px'
+    marginLeft: '12px',
   },
   caseDetail: {
     fontSize: '12px',
     color: '#666666',
     padding: '0 16px',
-    textAlign: 'left'
-  }
+    textAlign: 'left',
+  },
 };

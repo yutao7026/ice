@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -13,7 +13,7 @@ export default class ComplexFilter extends Component {
 
   static propTypes = {
     style: PropTypes.object,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {};
@@ -22,7 +22,7 @@ export default class ComplexFilter extends Component {
     super(props);
     this.state = {
       currentFilterType: 'article',
-      categories: ['type1', 'type3']
+      categories: ['type1', 'type3'],
     };
   }
 
@@ -45,7 +45,7 @@ export default class ComplexFilter extends Component {
     const FILTERS = [
       { type: 'article', text: '文章' },
       { type: 'app', text: '应用' },
-      { type: 'other', text: '其他' }
+      { type: 'other', text: '其他' },
     ];
 
     const CATEGORIES = [
@@ -53,7 +53,7 @@ export default class ComplexFilter extends Component {
       { type: 'type1', text: '类目一' },
       { type: 'type2', text: '类目二' },
       { type: 'type3', text: '类目三' },
-      { type: 'type4', text: '类目四' }
+      { type: 'type4', text: '类目四' },
     ];
     return (
       <div className="complex-filter">
@@ -66,7 +66,7 @@ export default class ComplexFilter extends Component {
                 }`}
               onClick={() => {
                 this.setState({
-                  currentFilterType: item.type
+                  currentFilterType: item.type,
                 });
               }}
             >
@@ -87,11 +87,11 @@ export default class ComplexFilter extends Component {
                   const isInCategory = categories.indexOf(cat.type) > -1;
                   if (isInCategory) {
                     this.setState({
-                      categories: categories.filter((item) => item !== cat.type)
+                      categories: categories.filter(item => item !== cat.type),
                     });
                   } else {
                     this.setState({
-                      categories: [...categories, cat.type]
+                      categories: [...categories, cat.type],
                     });
                   }
                 }}
@@ -106,8 +106,8 @@ export default class ComplexFilter extends Component {
             所有者：<Combobox
               style={styles.combobox}
               multiple
-              value={'卓凌'}
-              tags={true}
+              value="卓凌"
+              tags
               filterLocal={false}
               onInputBlur={() => console.log('blur')}
             />
@@ -140,20 +140,20 @@ const styles = {
   tabFilterContainer: {
     display: 'flex',
     flexDirection: 'row',
-    paddingBottom: 0
+    paddingBottom: 0,
   },
   filterBelonging: { paddingBottom: '10px', borderBottom: '1px solid #F4F4F4' },
   filterBelongingLabel: {
     fontSize: '14px',
     color: '#333',
-    marginRight: '19px'
+    marginRight: '19px',
   },
   filterForm: {
     marginTop: '20px',
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   combobox: { width: '200px', marginRight: '25px' },
-  select: { width: '50px', marginRight: '25px' }
+  select: { width: '50px', marginRight: '25px' },
 };

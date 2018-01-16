@@ -78,13 +78,13 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     width: '1080px',
-    margin: '0 auto'
+    margin: '0 auto',
   },
   logo: {
     color: '#3080FE',
     fontWeight: 'bold',
     fontSize: '28px',
-    margin: '12px 0'
+    margin: '12px 0',
   },
   nav: { width: '400px', margin: '0 auto', display: 'flex' },
   navItem: { width: '25%', lineHeight: '54px', textAlign: 'center' },
@@ -97,6 +97,6 @@ const styles = {
     width: '100%',
     marginTop: '40px',
     justifyContent: 'center',
-    fontSize: '12px'
-  }
+    fontSize: '12px',
+  },
 };

@@ -145,10 +145,10 @@ export default class SimpleFormDialog extends Component {
   }
 }
 
-const styles = { 
+const styles = {
   simpleFormDialog: { width: '640px' },
   dialogContent: {},
-  formRow: { marginTop: 20 }, 
-  input: { width: '100%' }, 
-  formLabel: { lineHeight: '26px' }, 
+  formRow: { marginTop: 20 },
+  input: { width: '100%' },
+  formLabel: { lineHeight: '26px' },
 };

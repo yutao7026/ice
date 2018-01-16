@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -17,22 +17,22 @@ import FilterForm from './Filter';
     // 详细请求配置请参见 https://github.com/axios/axios
     url: '/mock/filter-table-list.json',
     params: {
-      page: 1
+      page: 1,
     },
     defaultBindingData: {
       list: [],
       total: 100,
       pageSize: 10,
-      currentPage: 1
-    }
-  }
+      currentPage: 1,
+    },
+  },
 })
 export default class EnhanceTable extends Component {
   static displayName = 'EnhanceTable';
 
   static propTypes = {
     style: PropTypes.object,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {};
@@ -43,7 +43,7 @@ export default class EnhanceTable extends Component {
     // 请求参数缓存
     this.queryCache = {};
     this.state = {
-      filterFormValue: {}
+      filterFormValue: {},
     };
   }
 
@@ -66,7 +66,7 @@ export default class EnhanceTable extends Component {
 
   fetchData = () => {
     this.props.updateBindingData('tableData', {
-      data: this.queryCache
+      data: this.queryCache,
     });
   };
 
@@ -118,15 +118,15 @@ export default class EnhanceTable extends Component {
     );
   };
 
-  changePage = currentPage => {
+  changePage = (currentPage) => {
     this.queryCache.page = currentPage;
 
     this.fetchData();
   };
 
-  filterFormChange = value => {
+  filterFormChange = (value) => {
     this.setState({
-      filterFormValue: value
+      filterFormValue: value,
     });
   };
 
@@ -134,14 +134,14 @@ export default class EnhanceTable extends Component {
     // 合并参数，请求数据
     this.queryCache = {
       ...this.queryCache,
-      ...this.state.filterFormValue
+      ...this.state.filterFormValue,
     };
     this.fetchData();
   };
 
   resetFilter = () => {
     this.setState({
-      filterFormValue: {}
+      filterFormValue: {},
     });
   };
 
@@ -201,7 +201,7 @@ const styles = {
   filterTableOperation: { lineHeight: '28px' },
   operationItem: {
     marginRight: '12px',
-    textDecoration: 'none'
+    textDecoration: 'none',
   },
   titleWrapper: { display: 'flex', flexDirection: 'row' },
   title: { marginLeft: '10px', lineHeight: '20px' },
@@ -209,7 +209,7 @@ const styles = {
     minHeight: 0,
     marginBottom: 20,
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
-  todo4: { textAlign: 'right', paddingTop: '26px' }
+  todo4: { textAlign: 'right', paddingTop: '26px' },
 };

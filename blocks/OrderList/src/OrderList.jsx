@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -21,7 +21,7 @@ export default class OrderList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tableData: []
+      tableData: [],
     };
   }
 
@@ -34,12 +34,12 @@ export default class OrderList extends Component {
    */
   getTableData = () => {
     axios.get('/mock/order-list.json')
-      .then(response => {
+      .then((response) => {
         this.setState({
-          tableData: response.data.data
+          tableData: response.data.data,
         });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       });
   }
@@ -99,7 +99,7 @@ export default class OrderList extends Component {
   render() {
     const rowSelection = {
       onChange: this.handleRowSelection,
-      mode: 'single'
+      mode: 'single',
     };
 
     const { tableData } = this.state;
@@ -123,4 +123,4 @@ export default class OrderList extends Component {
   }
 }
 
-const styles = {"orderImg":{"width":"60px","height":"60px","float":"left","marginRight":"10px"},"orderDetailLink":{"textDecoration":"none"},"orderList":{},"orderListHead":{"marginBottom":"20px","color":"#666"}}
+const styles = { orderImg: { width: '60px', height: '60px', float: 'left', marginRight: '10px' }, orderDetailLink: { textDecoration: 'none' }, orderList: {}, orderListHead: { marginBottom: '20px', color: '#666' } };

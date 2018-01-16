@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import { Dialog, Button } from '@icedesign/base';
@@ -64,13 +64,13 @@ const styles = {
     width: '52px',
     height: '52px',
     marginTop: '26px',
-    marginBottom: '10px'
+    marginBottom: '10px',
   },
   dialogContent: {
     height: '160px',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
   },
-  text: { fontSize: '16px;' }
+  text: { fontSize: '16px;' },
 };

@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -47,7 +47,7 @@ export default class ComplexDialog extends Component {
           autoFocus={false}
           footer={this.renderFooter()}
           title="入驻成功"
-          isFullScreen={true}
+          isFullScreen
           onClose={this.hideDialog}
           {...this.props}
           visible={this.state.visible}
@@ -66,7 +66,7 @@ export default class ComplexDialog extends Component {
             </div>
             <div style={styles.authList}>
               <div style={styles.authItem}>
-                <Icon style={styles.authItemIcon} size="xs" type="select" /> 
+                <Icon style={styles.authItemIcon} size="xs" type="select" />
                 V 标头像
               </div>
               <div style={styles.authItem}>
@@ -94,12 +94,12 @@ const styles = {
     height: '200px',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   info: { marginTop: '10px', fontSize: '16px', textAlign: 'center' },
   extraInfo: { marginTop: '12px', fontSize: '12px', color: '#999999' },
   authList: { marginTop: '10px', fontSize: '12px', color: '#999999' },
   authItem: { marginTop: '5px' },
-  authItemIcon: { color: '#2ECA9C', marginRight: '5px', },
-  footer: { marginTop: '10px', marginBottom: '10px', textAlign: 'center' }
+  authItemIcon: { color: '#2ECA9C', marginRight: '5px' },
+  footer: { marginTop: '10px', marginBottom: '10px', textAlign: 'center' },
 };

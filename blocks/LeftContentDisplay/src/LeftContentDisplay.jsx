@@ -32,4 +32,4 @@ export default class LeftContentDisplay extends Component {
   }
 }
 
-const styles = {"container":{"margin":"0 auto","width":"1080px"},"content":{"display":"flex","position":"relative","alignItems":"center","overflow":"hidden","height":"600px"},"col":{"width":"50%"},"title":{"fontSize":"28px","fontWeight":"bold"},"description":{"color":"#666","lineHeight":"22px"},"image":{"position":"absolute","top":"20px","width":"40%"},"leftContentDisplay":{}}
+const styles = { container: { margin: '0 auto', width: '1080px' }, content: { display: 'flex', position: 'relative', alignItems: 'center', overflow: 'hidden', height: '600px' }, col: { width: '50%' }, title: { fontSize: '28px', fontWeight: 'bold' }, description: { color: '#666', lineHeight: '22px' }, image: { position: 'absolute', top: '20px', width: '40%' }, leftContentDisplay: {} };

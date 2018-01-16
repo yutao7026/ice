@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -16,22 +16,22 @@ import IceLabel from '@icedesign/label';
     // 详细请求配置请参见 https://github.com/axios/axios
     url: '/mock/enhance-table-list.json',
     params: {
-      page: 1
+      page: 1,
     },
     defaultBindingData: {
       list: [],
       total: 100,
       pageSize: 10,
-      currentPage: 1
-    }
-  }
+      currentPage: 1,
+    },
+  },
 })
 export default class EnhanceTable extends Component {
   static displayName = 'EnhanceTable';
 
   static propTypes = {
     style: PropTypes.object,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {};
@@ -41,7 +41,7 @@ export default class EnhanceTable extends Component {
 
     this.queryCache = {};
     this.state = {
-      activeKey: 'solved'
+      activeKey: 'solved',
     };
   }
 
@@ -64,7 +64,7 @@ export default class EnhanceTable extends Component {
 
   fetchData = () => {
     this.props.updateBindingData('tableData', {
-      data: this.queryCache
+      data: this.queryCache,
     });
   };
 
@@ -119,7 +119,7 @@ export default class EnhanceTable extends Component {
 
   onTabChange = (tabKey) => {
     this.setState({
-      activeKey: tabKey
+      activeKey: tabKey,
     });
     this.queryCache.activeKey = tabKey;
 
@@ -128,7 +128,7 @@ export default class EnhanceTable extends Component {
     } else if (tabKey === 'needFix') {
       this.fetchData();
     } else {
-      alert('你点击了 ' + tabKey);
+      alert(`你点击了 ${tabKey}`);
     }
   };
 
@@ -250,10 +250,10 @@ const styles = {
     minHeight: 0,
     marginBottom: 20,
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   tabCount: { color: '#3080FE' },
   extraFilter: { display: 'flex', alignItems: 'center' },
   search: { marginLeft: 10 },
-  pagination: { textAlign: 'right', paddingTop: '26px' }
+  pagination: { textAlign: 'right', paddingTop: '26px' },
 };

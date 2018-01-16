@@ -1,4 +1,4 @@
-'use strict';
+
 
 import React, { Component } from 'react';
 import IceCard from '@icedesign/card';
@@ -144,14 +144,14 @@ const styles = {
     backgroundPosition: 'center center',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   displayCardItem: {
     display: 'flex',
     height: '150px',
     width: '169',
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   displayCardText: { color: '#BEBEBE', fontSize: '12px', marginBottom: '5px' },
   helpLink: { marginLeft: '5px' },
@@ -159,9 +159,9 @@ const styles = {
     color: '#fff',
     fontSize: '24px',
     fontWeight: 'bold',
-    marginBottom: '3px'
+    marginBottom: '3px',
   },
   displayCardDesc: { color: '#BEBEBE', fontSize: '12px' },
   down: { width: '6px', height: '9px' },
-  up: { width: '6px', height: '9px' }
+  up: { width: '6px', height: '9px' },
 };
