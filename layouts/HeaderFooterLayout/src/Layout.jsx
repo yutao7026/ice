@@ -15,8 +15,8 @@ export default class BasicLayout extends PureComponent {
       <Layout
         style={{ minHeight: '100vh' }}
         className={cx({
-          'ice-admin-layout': true,
-          'ice-admin-header-footer-layout': true,
+          'ice-design-layout': true,
+          'ice-design-header-footer-layout': true,
         })}
       >
         <Header />
