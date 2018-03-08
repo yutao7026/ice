@@ -1,0 +1,25 @@
+{
+  "name": "ice-developer-scripts",
+  "version": "0.1.0",
+  "description": "ICE SDK for developer users",
+  "main": "lib/index.js",
+  "bin": {
+    "ice": "./bin/ice.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ICE Team",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.0",
+    "cross-spawn": "^6.0.5",
+    "ejs": "^2.5.7",
+    "ice-scripts": "^1.0.3",
+    "react-dev-utils": "^5.0.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
+  }
+}
