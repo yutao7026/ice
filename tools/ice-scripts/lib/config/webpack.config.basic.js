@@ -28,7 +28,7 @@ module.exports = function getWebpackConfigBasic(
     ),
     resolve: {
       modules: [paths.appNodeModules, 'node_modules'],
-      extensions: ['.js', '.jsx', '.json', '.html'],
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.html'],
     },
     externals: buildConfig.externals || {
       react: 'window.React',

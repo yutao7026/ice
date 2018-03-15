@@ -14,6 +14,7 @@ const SASS_LOADER = require.resolve('sass-loader');
 const STYLE_LOADER = require.resolve('style-loader');
 const CSS_HOT_LOADER = require.resolve('css-hot-loader');
 const URL_LOADER = require.resolve('url-loader');
+const TYPESCRIPT_LOADER = require.resolve('awesome-typescript-loader');
 const URL_LOADER_LIMIT = 8192;
 
 function withCssHotLoader(loaders) {
@@ -115,6 +116,11 @@ module.exports = (paths, buildConfig = {}) => {
       exclude: /node_modules/,
       loader: BABEL_LOADER,
       options: deepAssign({}, babelConfig, { cacheDirectory: true }),
+    },
+    {
+      test: /\.tsx?$/,
+      exclude: /node_modules/,
+      loader: TYPESCRIPT_LOADER,
     },
 
     // extra url loader usage
