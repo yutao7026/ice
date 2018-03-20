@@ -12,7 +12,6 @@ const clearConsole = require('react-dev-utils/clearConsole');
 const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
-const deepmerge = require('deepmerge');
 
 const getPaths = require('./config/paths');
 const getEntries = require('./config/getEntry');
@@ -67,10 +66,10 @@ module.exports = function(args, subprocess) {
 
   let isFirstCompile = true;
   const compiler = webpack(webpackConfig);
-  let devServerConfig = require('./config/webpack.server.config')(paths, args);
-  if ('devServer' in webpackConfig) {
-    devServerConfig = deepmerge(webpackConfig.devServer, devServerConfig);
-  }
+  const devServerConfig = require('./config/webpack.server.config')(
+    paths,
+    args
+  );
   const devServer = new WebpackDevServer(compiler, devServerConfig);
 
   compiler.plugin('done', (stats) => {
